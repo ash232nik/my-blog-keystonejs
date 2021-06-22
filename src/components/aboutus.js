@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import '../components/aboutus.css';
+import Navbar from './navbar';
 const Aboutus = () =>{
     const [data,setData]=useState()
   
@@ -33,13 +34,14 @@ const Aboutus = () =>{
     return (
        <>
        <div style={{border: "1px red"}} className="container-one">
-         
+       
            {data && data.map((e,index)=>
            <div className="box">
-           <div className="box-one" key={index}><h2>{e.title}</h2>
-           <p className="para">{e.body}</p></div>
-           <div className="box-two">
+             <div className="box-one">
              {/*<img src={item.image} alt="image"/>*/}</div> 
+           
+           <div className="box-two" key={index}><h2>{e.title}</h2>
+           <p className="para">{e.body}</p></div>
            </div>
            )
            }

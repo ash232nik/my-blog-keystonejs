@@ -11,12 +11,13 @@ function App() {
            <Navbar/>
            <Switch>
              <Route path="/Blog" exact component={Blogpage}/>
-             <Route path="/AboutUs" exact component={Aboutus}/>
+             <Route path="/About Us" exact component={Aboutus}/>
            </Switch>
            </Router>
-           <Aboutus/>
+           
+          
          
-         <hr/>
+         
       
       </div>
 
